@@ -26,9 +26,10 @@ const userschema = new mongoose.Schema({
         default:Date.now
     },
     profit:{
-        type:Number,
-        default:'false'
+        type:Number
     }
 })
 
-module.exports = User = mongoose.model('User', userschema)
+const User = mongoose.model('user', userschema);
+User.save();
+module.exports = User
