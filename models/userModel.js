@@ -19,8 +19,8 @@ const userschema = new mongoose.Schema({
         type:String,
         required: true 
     },
-    profit_p:{
-        type:Number
+    fc:{
+        type:String
     },
     password:{
         type:String,
