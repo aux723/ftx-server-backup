@@ -8,10 +8,9 @@ const userschema = new mongoose.Schema({
         type:String,
         required: true 
     },
-   
-    profit: {
-        type:Number
-    },
+   balance: {
+       type:Number
+   },
     email:{
         type:String,
         required: true 
@@ -20,6 +19,9 @@ const userschema = new mongoose.Schema({
         type:String,
         required: true 
     },
+    profit_p:{
+        type:Number
+    }
     password:{
         type:String,
         required: true 
@@ -30,4 +32,4 @@ const userschema = new mongoose.Schema({
     },
 })
 
-module.exports = User = mongoose.model('user', userschema)
+module.exports = User = mongoose.model('User', userschema)
