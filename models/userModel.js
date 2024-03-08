@@ -12,7 +12,7 @@ const userschema = new mongoose.Schema({
         type:String
     },
     profit: {
-        type:Number,
+        type:String,
         default:'0'
     },
     email:{
