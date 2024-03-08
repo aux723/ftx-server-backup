@@ -8,6 +8,7 @@ const userschema = new mongoose.Schema({
         type:String,
         required: true 
     },
+    balance:Number,
     email:{
         type:String,
         required: true 
@@ -15,9 +16,6 @@ const userschema = new mongoose.Schema({
     phone:{
         type:String,
         required: true 
-    },
-    fc:{
-        type:String
     },
     password:{
         type:String,
@@ -27,6 +25,10 @@ const userschema = new mongoose.Schema({
         type:Date,
         default:Date.now
     },
+    profit:{
+        type:Number,
+        default:'false'
+    }
 })
 
 module.exports = User = mongoose.model('User', userschema)
