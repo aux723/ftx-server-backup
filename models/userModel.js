@@ -8,9 +8,6 @@ const userschema = new mongoose.Schema({
         type:String,
         required: true 
     },
-   balance: {
-       type:Number
-   },
     email:{
         type:String,
         required: true 
