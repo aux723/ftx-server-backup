@@ -8,7 +8,13 @@ const userschema = new mongoose.Schema({
         type:String,
         required: true 
     },
-    balance:Number,
+    balance: {
+        type:Number
+    },
+    profit: {
+        type:Number,
+        default:0
+    },
     email:{
         type:String,
         required: true 
@@ -25,11 +31,6 @@ const userschema = new mongoose.Schema({
         type:Date,
         default:Date.now
     },
-    profit:{
-        type:Number
-    }
 })
 
-const User = mongoose.model('user', userschema);
-User.save();
-module.exports = User
+module.exports = User = mongoose.model('user', userschema)
