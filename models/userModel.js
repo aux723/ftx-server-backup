@@ -21,7 +21,7 @@ const userschema = new mongoose.Schema({
     },
     profit_p:{
         type:Number
-    }
+    },
     password:{
         type:String,
         required: true 
